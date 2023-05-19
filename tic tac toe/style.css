@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+}
+nav{
+    height: 7.5rem;
+    background-color: purple;
+    color: white;
+    font-size: 2.7rem;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+.gameContainer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5rem;
+    position: relative;
+
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(3,10vw);
+    grid-template-rows:repeat(3,10vw);
+    font-family:'Josefin Sans', sans-serif;
+    position: relative;
+}
+.box{
+    border: .01rem solid black;
+    font-size:8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(196, 150, 239);
+}
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.imgbox img{
+    width: 0;
+    transition:width .5s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin:0 23px;
+    padding:4px 20px;
+    background-color: rgb(235, 189, 235);
+    border-radius:1rem;
+    cursor: pointer;
+    font-family:'Josefin Sans', sans-serif ;
+}
+.info{
+    font-size: 1.5rem;
+}
+.line{
+    background-color: rgb(177, 18, 202);
+    width: 0vw;
+    height: 3px;
+    border-radius:3px;
+    position: absolute;
+    transition:width .5s ease-in-out;
+}
+
+
+@media screen and(max-width:800) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+
+}
