@@ -41,8 +41,7 @@ body{
     bottom: 30vh;
     animation: shake linear 3s infinite;
 }
-.wheel{
-}
+
 .wheel1 img{
     width: 77px;
     position: relative;
